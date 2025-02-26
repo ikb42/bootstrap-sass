@@ -107,10 +107,12 @@
   }
 
   // Fix the top/bottom navbars when screen real estate supports it
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: variables.$zindex-navbar-fixed;
+  & {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: variables.$zindex-navbar-fixed;
+  }  
 
   // Undo the rounded corners
   @media (min-width: variables.$grid-float-breakpoint) {
